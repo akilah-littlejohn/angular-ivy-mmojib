@@ -14,7 +14,7 @@ export class AppComponent  {
 resultsTitleisDeskTop = true;
 
   ngOninit(){
-    this.br.observe(['(min-width: 500px)'])
+    this.br.observe(['(min-width: 638px)'])
     .subscribe((state: BreakpointState) => {
       if (state.matches) {
         this.resultsTitleisDeskTop = false;
