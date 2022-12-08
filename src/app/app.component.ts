@@ -3,6 +3,7 @@ import {
   BreakpointObserver,
   BreakpointState
 } from '@angular/cdk/layout';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'my-app',
@@ -11,14 +12,15 @@ import {
 })
 export class AppComponent  {
   constructor(public br:BreakpointObserver){}
-resultsTitleisDeskTop = true;
+
+resultsTitleisDeskTop:boolean = true;
+subscribeToObserver:Subscription;
 
   ngOninit(){
-    this.br.observe(['(min-width: 638px)'])
-    .subscribe((state: BreakpointState) => {
-      if (state.matches) {
-        this.resultsTitleisDeskTop = false;
-      } 
-    })
-  }
+//this.subscribeToObserver = this.br.observe([])
+}
+resultsHeaderString = {
+  mobile:"Popular Searches",
+  desktop: "Tv Shows and Movies"
+}
 }
