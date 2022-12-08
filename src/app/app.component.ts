@@ -13,7 +13,7 @@ import { Subscription } from 'rxjs';
 export class AppComponent  {
   constructor(public br:BreakpointObserver){}
 
-resultsTitleisDeskTop:boolean = true;
+resultsTitleisDeskTop:boolean = false;
 isDeskTop = this.resultsTitleisDeskTop === true;
 subscribeToObserver:Subscription;
 
