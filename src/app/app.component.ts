@@ -1,4 +1,8 @@
 import { Component, VERSION } from '@angular/core';
+import {
+  BreakpointObserver,
+  BreakpointState
+} from '@angular/cdk/layout';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +10,4 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
 }
