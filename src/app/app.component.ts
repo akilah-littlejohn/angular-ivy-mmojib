@@ -1,4 +1,9 @@
 import { Component, VERSION } from '@angular/core';
+import {
+  BreakpointObserver,
+  BreakpointState
+} from '@angular/cdk/layout';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +11,17 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  constructor(public br:BreakpointObserver){}
+
+resultsTitleisDeskTop:boolean = false;
+isDeskTop = this.resultsTitleisDeskTop === true;
+subscribeToObserver:Subscription;
+
+  ngOninit(){
+//this.subscribeToObserver = this.br.observe([])
+}
+resultsHeaderString = {
+  mobile:"Popular Searches",
+  desktop: "Tv Shows and Movies"
+}
 }

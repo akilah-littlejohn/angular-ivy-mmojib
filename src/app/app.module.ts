@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { SearchComponent } from './search/search.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, SearchComponent ],
+  imports:      [ BrowserModule, FormsModule, LayoutModule ],
+  declarations: [ AppComponent, SearchComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

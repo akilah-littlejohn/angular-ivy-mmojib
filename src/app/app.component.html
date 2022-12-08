@@ -1,4 +1,9 @@
-<div class="section">
+
 <app-search></app-search>
-<h1>Tv Shows and Movies</h1>
-</div>
+<ng-container>
+  <h1 class="desktop" *ngIf="isDeskTop else IsMobile" >{{this.resultsHeaderString.desktop}}</h1>
+<ng-template #IsMobile>
+<h1 class="mobile">{{this.resultsHeaderString.mobile}}</h1>
+</ng-template>
+</ng-container>
+

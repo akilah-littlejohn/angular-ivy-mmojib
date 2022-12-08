@@ -1,8 +1,12 @@
 
-h1 {
+.desktop {
   background-color:#323232 ;
   font-size: medium;
   margin-top: 1.53em; 
   padding: .2em;
 
+}
+
+.mobile {
+  font-size: Larger;
 }
