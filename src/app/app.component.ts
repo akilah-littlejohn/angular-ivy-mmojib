@@ -10,4 +10,9 @@ import {
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+  constructor(public br:BreakpointObserver){}
+
+  ngOninit(){
+    this.br.observe(['(min-width: 500px)'])
+  }
 }
