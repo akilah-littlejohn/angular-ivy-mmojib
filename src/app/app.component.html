@@ -1,7 +1,9 @@
-<div class="section">
-<app-search></app-search>
 
-<ng-template>
-<h1></h1>
+<app-search></app-search>
+<ng-container>
+  <h1 class="desktop" *ngIf="isDeskTop">{{this.resultsHeaderString.desktop}}</h1>
+<ng-template #IsMobile>
+<h1>{{this.resultsHeaderString.mobile}}</h1>
 </ng-template>
-</div>
+</ng-container>
+

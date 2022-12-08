@@ -14,6 +14,7 @@ export class AppComponent  {
   constructor(public br:BreakpointObserver){}
 
 resultsTitleisDeskTop:boolean = true;
+isDeskTop = this.resultsTitleisDeskTop === true;
 subscribeToObserver:Subscription;
 
   ngOninit(){
