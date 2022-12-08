@@ -2,4 +2,13 @@ input {
   background-color: #323232;
   padding: 10px;
   border-radius: 5px;
+  outline-style: none;
+  border: none;
+  min-width: 100%;
+}
+
+@media screen and (min-width: 638px){
+input {
+  min-width: 636px;
+}
 }
