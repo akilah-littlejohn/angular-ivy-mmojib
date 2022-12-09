@@ -1,15 +1,19 @@
 form {
   margin-top: 20px;
   display: flex;
+  background-color: #323232;
+
  /* background-color: #323232;
   border-radius: 5px;
   width: 100%;*/
+  width: 400px;
+
 }
 
 button {
-background-color: #323232;
 border:none;
-flex-grow:1;
+border-radius: 10px;
+background-color: #323232;
 padding: 3px;
 color:#C4C4C4;
 justify-self: end;
@@ -22,13 +26,19 @@ input {
   background-color: #323232;
   outline-style: none;
   border: none;
-  width: 100%;
+  width: 400px;
 }
 
+@media only screen and (max-width: 600px) {
+  input{
+   width: 100%;
+ }
 
-@media screen and (min-width: 638px){
+ form {
+   width:100%;
+ }
 
-  input {
-    min-width: 636px;
-  }
-  }
+ button {
+   flex-grow:1
+ }
+}
