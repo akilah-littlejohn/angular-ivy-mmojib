@@ -7,9 +7,10 @@ import { SearchComponent } from './search/search.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,BrowserAnimationsModule, LayoutModule, MatIconModule ],
+  imports:      [ BrowserModule, FormsModule,BrowserAnimationsModule, LayoutModule, MatIconModule, MatButtonModule ],
   declarations: [ AppComponent, SearchComponent ],
   bootstrap:    [ AppComponent ]
 })
