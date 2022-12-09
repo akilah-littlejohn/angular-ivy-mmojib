@@ -1,18 +1,44 @@
 form {
   margin-top: 20px;
-}
-input {
+  display: flex;
   background-color: #323232;
-  padding: 12px 20px 12px;
+
+ /* background-color: #323232;
   border-radius: 5px;
-  outline-style: none;
-  border: none;
-  min-width: 100%;
-  color: #fff;
+  width: 100%;*/
+  width: 400px;
+
 }
 
-@media screen and (min-width: 638px){
-input {
-  min-width: 636px;
+button {
+border:none;
+border-radius: 10px;
+background-color: #323232;
+padding: 3px;
+color:#C4C4C4;
+justify-self: end;
+
+ 
 }
+
+
+input {
+  background-color: #323232;
+  outline-style: none;
+  border: none;
+  width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  input{
+   width: 100%;
+ }
+
+ form {
+   width:100%;
+ }
+
+ button {
+   flex-grow:1
+ }
 }

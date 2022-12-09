@@ -1,9 +1,14 @@
 
+h1 {
+  font-family:Montserrat;
+}
 .desktop {
   background-color:#323232 ;
+  border-radius: 5px;
   font-size: medium;
   margin-top: 1.53em; 
-  padding: .2em;
+  padding: .25em;
+  padding-left: 15px;
 
 }
 
