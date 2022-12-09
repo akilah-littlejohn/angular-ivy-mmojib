@@ -9,10 +9,10 @@ form {
 
 button {
 background-color: #323232;
-border: none;
 border-radius: 5px;
 padding: 3px;
-color:#C4C4C4
+color:#C4C4C4;
+justify-self: end;
 
  
 }
