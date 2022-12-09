@@ -5,12 +5,11 @@ import { Observable } from 'rxjs';
 import { MovieData } from './movie-data';
 @Injectable()
 export class MovieapiService {
+  movieDataUrl: string = '';
 
-movieDataUrl:string = '';
+  constructor(public hp: HttpClient) {}
 
-  constructor(public hp:HttpClient) { }
-
-getMovie(): Observable<MovieData[]> {
-  return this.hp.get<MovieData[]>(this.movieDataUrl)
-}
+  getMovie(): Observable<MovieData[]> {
+    return this.hp.get<MovieData[]>(this.movieDataUrl);
+  }
 }

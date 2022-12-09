@@ -1,24 +1,20 @@
-
-
 <ng-container>
-<section >
-<img src="#" alt="Movie Image here">
+  <section>
+    <img src="#" alt="Movie Image here" />
 
-<div class="resultsCard_title">
-<p>{{ movieResultsTitle }}<p>
-<button> <mat-icon>play_arrow</mat-icon></button>
+    <div class="resultsCard_title">
+      <p>{{ movieResultsTitle }}</p>
+      <p></p>
+    </div>
+  </section>
+  <ng-template>
+    <section class="resultsCard-mobile">
+      <div class="resultsCard_title">
+        <img src="#" alt="Movie Image here" />
+        <span>{{ movieResultsTitle }}</span>
+      </div>
 
-</div>
-
-</section>
-<ng-template>
-<section class="resultsCard-mobile">
-<div class="resultsCard_title">
-<img src="#" alt="Movie Image here">
-<span>{{ movieResultsTitle }}</span>
-</div>
-
-<button> <mat-icon>play_arrow</mat-icon></button>
-</section>
-</ng-template>
+      <button><mat-icon>play_arrow</mat-icon></button>
+    </section>
+  </ng-template>
 </ng-container>

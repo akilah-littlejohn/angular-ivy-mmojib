@@ -1,9 +1,10 @@
-
 <app-search></app-search>
 <ng-container>
-  <h1 class="desktop" *ngIf="isDeskTop else IsMobile" >{{this.resultsHeaderString.desktop}}</h1>
-<ng-template #IsMobile>
-<h1 class="mobile">{{this.resultsHeaderString.mobile}}</h1>
-</ng-template>
+  <h1 class="desktop" *ngIf="isDeskTop; else IsMobile">
+    {{ this.resultsHeaderString.desktop }}
+  </h1>
+  <ng-template #IsMobile>
+    <h1 class="mobile">{{ this.resultsHeaderString.mobile }}</h1>
+  </ng-template>
 </ng-container>
 <app-resultsview></app-resultsview>
