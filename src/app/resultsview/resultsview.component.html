@@ -1,6 +1,24 @@
 
-<section class="resultsCard-mobile">
-  <img src="#" alt="Movie Image here">
-  <span>{{ movieResultsTitle }}</span>
- <button> <mat-icon>play_arrow</mat-icon></button>
+
+<ng-container>
+<section >
+<img src="#" alt="Movie Image here">
+
+<div class="resultsCard_title">
+<p>{{ movieResultsTitle }}<p>
+<button> <mat-icon>play_arrow</mat-icon></button>
+
+</div>
+
 </section>
+<ng-template>
+<section class="resultsCard-mobile">
+<div class="resultsCard_title">
+<img src="#" alt="Movie Image here">
+<span>{{ movieResultsTitle }}</span>
+</div>
+
+<button> <mat-icon>play_arrow</mat-icon></button>
+</section>
+</ng-template>
+</ng-container>
