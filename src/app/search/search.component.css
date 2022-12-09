@@ -3,7 +3,7 @@ form {
   display: flex;
   background-color: #323232;
   border-radius: 5px;
-  width: 200px;
+  width: 400px;
   min-width: 100%;
 }
 
@@ -17,9 +17,9 @@ input {
   background-color: #323232;
   outline-style: none;
   border: none;
-  width: 200px;
-
-  color: #fff;
+  width: 400px;
+  color: #C4C4C4
+  ;
 }
 
 @media screen and (min-width: 738px){
