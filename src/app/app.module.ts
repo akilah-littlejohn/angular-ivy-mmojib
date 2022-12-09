@@ -8,10 +8,11 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { ResultsviewComponent } from './resultsview/resultsview.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,BrowserAnimationsModule, LayoutModule, MatIconModule, MatButtonModule ],
-  declarations: [ AppComponent, SearchComponent ],
+  declarations: [ AppComponent, SearchComponent, ResultsviewComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

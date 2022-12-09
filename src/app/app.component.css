@@ -1,6 +1,7 @@
 
 h1 {
   font-family:Montserrat;
+  
 }
 .desktop {
   background-color:#323232 ;
@@ -13,5 +14,5 @@ h1 {
 }
 
 .mobile {
-  font-size: Larger;
+  font-size: Large;
 }

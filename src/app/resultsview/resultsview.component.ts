@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resultsview.component.css']
 })
 export class ResultsviewComponent implements OnInit {
-
+movieResultsTitle= "Dark"
   constructor() { }
 
   ngOnInit() {
