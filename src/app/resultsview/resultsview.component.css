@@ -4,9 +4,14 @@
   background-color:#202020;
   height: 100px;
 }
-
+button {
+  color: #fff;
+  background-color: #202020;
+  border:none;
+}
 span {
   padding-left: 5px;
-  
+  flex-grow:1;
+
 
 }
