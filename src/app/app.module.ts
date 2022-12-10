@@ -24,6 +24,6 @@ import { PlatformLayoutService } from './platform-layout.service';
   ],
   declarations: [AppComponent, SearchComponent, ResultsviewComponent],
   bootstrap: [AppComponent],
-  providers:[PlatformLayoutService]
+  providers: [PlatformLayoutService],
 })
 export class AppModule {}
