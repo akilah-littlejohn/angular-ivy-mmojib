@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { ResultsviewComponent } from './resultsview/resultsview.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PlatformLayoutService } from './platform-layout.service';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,7 @@ import { PlatformLayoutService } from './platform-layout.service';
     MatButtonModule,
     HttpClientModule,
   ],
-  declarations: [AppComponent, SearchComponent, ResultsviewComponent],
+  declarations: [AppComponent, SearchComponent, ResultsviewComponent, NavigationComponent],
   bootstrap: [AppComponent],
   providers: [PlatformLayoutService],
 })

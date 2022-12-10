@@ -15,12 +15,13 @@ button {
 @media only screen and (max-width: 600px) {
   .resultsCard_title {
     display: flex;
-    background-color: #262626;
+    background-color: #171717;
     height: 150px;
   }
   button {
     color: #fff;
     border: none;
+    background-color: #171717;
     justify-self: self-end;
     display: block;
   }
