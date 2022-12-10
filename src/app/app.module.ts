@@ -10,11 +10,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { ResultsviewComponent } from './resultsview/resultsview.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PlatformLayoutService } from './platform-layout.service';
 
 @NgModule({
-  imports:      [ 
-    BrowserModule, FormsModule,BrowserAnimationsModule, LayoutModule, MatIconModule, MatButtonModule, HttpClientModule ],
-  declarations: [ AppComponent, SearchComponent, ResultsviewComponent],
-  bootstrap:    [ AppComponent ]
+  imports: [
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatIconModule,
+    MatButtonModule,
+    HttpClientModule,
+  ],
+  declarations: [AppComponent, SearchComponent, ResultsviewComponent],
+  bootstrap: [AppComponent],
+  providers:[PlatformLayoutService]
 })
-export class AppModule { }
+export class AppModule {}

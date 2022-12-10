@@ -1,5 +1,5 @@
 import { Component, VERSION } from '@angular/core';
-import { BreakpointObserver } from '@angular/cdk/layout';
+import { PlatformLayoutService } from './platform-layout.service';
 
 @Component({
   selector: 'my-app',
@@ -7,16 +7,8 @@ import { BreakpointObserver } from '@angular/cdk/layout';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  resultsTitleisMobile: boolean = false;
-  constructor(public br: BreakpointObserver) {
+  constructor(public pl: PlatformLayoutService) {}
 
-    this.br.observe( '(max-width: 600px)' ).subscribe((result => {
-      this.resultsTitleisMobile = false;
-      if(result.matches){
-        this.resultsTitleisMobile = true;
-      };
-    }))
-  }
   resultsHeaderString = {
     mobile: 'Popular Searches',
     desktop: 'Tv Shows and Movies',
