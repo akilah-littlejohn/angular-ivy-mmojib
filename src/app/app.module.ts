@@ -8,10 +8,13 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { ResultsviewComponent } from './resultsview/resultsview.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,BrowserAnimationsModule, LayoutModule, MatIconModule, MatButtonModule ],
-  declarations: [ AppComponent, SearchComponent ],
+  imports:      [ 
+    BrowserModule, FormsModule,BrowserAnimationsModule, LayoutModule, MatIconModule, MatButtonModule, HttpClientModule ],
+  declarations: [ AppComponent, SearchComponent, ResultsviewComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
