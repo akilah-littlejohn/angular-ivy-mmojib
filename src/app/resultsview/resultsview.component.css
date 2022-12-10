@@ -1,6 +1,4 @@
-.resultsCard_title {
-  display: block;
-}
+
 
 
 button {
@@ -11,6 +9,12 @@ button {
   
 }
 
+@media only screen and (min-width: 600px){
+  img {
+    width: 100px;
+    height: 150px;
+  }  
+}
 
 @media only screen and (max-width: 600px) {
   .resultsCard_title{
@@ -31,4 +35,5 @@ button {
     align-self: center;
     flex-grow: 1;
   }
+ 
 }
