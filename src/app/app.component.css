@@ -1,18 +1,21 @@
-
 h1 {
-  font-family:Montserrat;
-  
+  font-family: Montserrat;
 }
 .desktop {
-  background-color:#323232 ;
+  background-color: #323232;
   border-radius: 5px;
   font-size: medium;
-  margin-top: 1.53em; 
-  padding: .25em;
+  margin-top: 1.53em;
+  padding: 0.25em;
   padding-left: 15px;
-
 }
 
 .mobile {
   font-size: Large;
+}
+
+.navigation {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
