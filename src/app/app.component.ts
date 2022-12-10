@@ -1,6 +1,5 @@
 import { Component, VERSION } from '@angular/core';
-import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-import { Subscription } from 'rxjs';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'my-app',
@@ -10,12 +9,17 @@ import { Subscription } from 'rxjs';
 export class AppComponent {
   constructor(public br: BreakpointObserver) {}
 
-  resultsTitleisDeskTop: boolean = true;
-  isDeskTop = this.resultsTitleisDeskTop === true;
-  subscribeToObserver: Subscription;
+  resultsTitleisDesk: boolean = false;
 
   ngOninit() {
-    //this.subscribeToObserver = this.br.observe([])
+    console.log(this.resultsTitleisDesk)
+    this.br.observe(Breakpoints.Large).subscribe((result => {
+      this.resultsTitleisDesk = false;
+      if(result.matches){
+        this.resultsTitleisDesk = true;
+      };
+      console.log("Large")
+    }))
   }
   resultsHeaderString = {
     mobile: 'Popular Searches',
