@@ -8,7 +8,6 @@ import { PlatformLayoutService } from './platform-layout.service';
 })
 export class AppComponent {
   constructor(public pl: PlatformLayoutService) {}
-  @Input() platformType:boolean = this.pl.resultsTitleisMobile; 
   
   resultsHeaderString = {
     mobile: 'Popular Searches',
