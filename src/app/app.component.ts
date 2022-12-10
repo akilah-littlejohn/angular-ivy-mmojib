@@ -1,5 +1,5 @@
 import { Component, VERSION } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
   selector: 'my-app',
@@ -7,18 +7,14 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  constructor(public br: BreakpointObserver) {}
+  resultsTitleisMobile: boolean = false;
+  constructor(public br: BreakpointObserver) {
 
-  resultsTitleisDesk: boolean = false;
-
-  ngOninit() {
-    console.log(this.resultsTitleisDesk)
-    this.br.observe(Breakpoints.Large).subscribe((result => {
-      this.resultsTitleisDesk = false;
+    this.br.observe( '(max-width: 600px)' ).subscribe((result => {
+      this.resultsTitleisMobile = false;
       if(result.matches){
-        this.resultsTitleisDesk = true;
+        this.resultsTitleisMobile = true;
       };
-      console.log("Large")
     }))
   }
   resultsHeaderString = {

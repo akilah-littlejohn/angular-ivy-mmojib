@@ -23,6 +23,7 @@ justify-self: end;
 input {
   background-color: #323232;
   outline-style: none;
+  color:#fff;
   border: none;
   width: 400px;
 }
