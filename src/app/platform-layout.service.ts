@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BreakpointObserver } from '@angular/cdk/layout';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Injectable()
 export class PlatformLayoutService {
@@ -8,7 +8,7 @@ export class PlatformLayoutService {
 
   constructor(public br: BreakpointObserver) { 
     
-    this.br.observe( '(max-width: 600px)' ).subscribe((result => {
+    this.br.observe( '(max-width: 600px' ).subscribe((result => {
       this.resultsTitleisMobile = false;
       if(result.matches){
         this.resultsTitleisMobile = true;
