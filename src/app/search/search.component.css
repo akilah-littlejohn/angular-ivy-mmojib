@@ -5,39 +5,35 @@ form {
   border-radius: 5px;
 
   width: 400px;
-
 }
 
 button {
-border:none;
-border-radius: 10px;
-background-color: #323232;
-padding: 3px;
-color:#C4C4C4;
-justify-self: end;
-
- 
+  border: none;
+  border-radius: 10px;
+  background-color: #323232;
+  padding: 3px;
+  color: #c4c4c4;
+  justify-self: end;
 }
-
 
 input {
   background-color: #323232;
   outline-style: none;
-  color:#fff;
+  color: #fff;
   border: none;
   width: 400px;
 }
 
 @media only screen and (max-width: 600px) {
-  input{
-   width: 100%;
- }
+  input {
+    width: 100%;
+  }
 
- form {
-   width:100%;
- }
+  form {
+    width: 100%;
+  }
 
- button {
-   flex-grow:1
- }
+  button {
+    flex-grow: 1;
+  }
 }
