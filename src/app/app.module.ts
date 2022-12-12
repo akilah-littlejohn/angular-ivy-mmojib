@@ -23,7 +23,12 @@ import { NavigationComponent } from './navigation/navigation.component';
     MatButtonModule,
     HttpClientModule,
   ],
-  declarations: [AppComponent, SearchComponent, ResultsviewComponent, NavigationComponent],
+  declarations: [
+    AppComponent,
+    SearchComponent,
+    ResultsviewComponent,
+    NavigationComponent,
+  ],
   bootstrap: [AppComponent],
   providers: [PlatformLayoutService],
 })
